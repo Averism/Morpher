@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "target": "es6",
+    "target": "es5",
     "outDir": "build",
     "sourceMap": false,
     "moduleResolution": "node",
@@ -19,5 +19,5 @@
     "**/*.spec.ts"
   ],
   "compileOnSave": true,
-  "lib": ["es2017", "es6"]
+  "lib": ["es2017", "es6", "dom"]
 }

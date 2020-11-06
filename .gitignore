@@ -10,3 +10,8 @@ stats.json
 npm-debug.log
 .idea
 test.sh
+
+fonts
+workspace
+cache
+webpack_assets

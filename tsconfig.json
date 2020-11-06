@@ -1,17 +1,19 @@
 {
   "compilerOptions": {
     "noImplicitAny": true,
-    "target": "es6",
+    "target": "es5",
     "outDir": "temp",
     "sourceMap": true,
     "moduleResolution": "node",
     "pretty": true,
     "esModuleInterop": true,
     "module": "commonjs",
+    "jsx": "react",
     "experimentalDecorators": true,
     "lib": [
       "es2017",
       "es6",
+      "dom"
     ]
   },
   "include": [
@@ -27,5 +29,6 @@
   "lib": [
     "es2017",
     "es6",
+    "dom"
   ]
 }
