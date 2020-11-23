@@ -8,7 +8,8 @@ const route: {[key: string]: string} = {
 function defRoute(req: string): string {
     let p = req.substr(1);
     if(route[req]) return route[req]; 
-    if(fs.existsSync(path.join("static",p))) return p;
+    let paths: string[] = p.split("/");
+    if(fs.existsSync(path.join("static",...paths))) return path.join(...paths);
     return null;
 }
 

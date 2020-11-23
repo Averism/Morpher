@@ -10,13 +10,12 @@ export default class MainMenu extends React.Component<any, any> {
         let docChooserAction: ChooserActionSheetAction = appstate.docChooser.actions;
         return <Page contentStyle={{ padding: "5px", "text-align": "center" }}>
             <Button modifier="large--cta" style={{ marginBottom: "5px" }}
-                onClick={() => docChooserAction.open()}>
-                Load New Image
+                onClick={() => { docChooser.getProperty().target = 0; docChooserAction.open();}}>
+                Load Primary Image
             </Button>
             <Button modifier="large--cta" style={{ marginBottom: "5px" }}
-                onClick={() => {
-                }}>
-                Change Layout
+                onClick={() => { docChooser.getProperty().target = 1; docChooserAction.open();}}>
+                Load Secondary Image
             </Button>
             <ChooserActionSheet statePath={docChooser}>
 

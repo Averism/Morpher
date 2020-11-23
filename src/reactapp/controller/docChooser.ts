@@ -25,8 +25,9 @@ export function docChooser(state: AppStates): ChooserActionSheetState {
         let selected = state.docChooser.selected.row;
         let data: {[key: string]: DocType} = state.docChooser.list.processor(state.docChooser.list.data) as {[key: string]: DocType};
         let selectedData: DocType = data[selected];
+        let target: number = map<number>("docChooser.target", state).getProperty()
         if(selectedData.type == "image") {
-            state.mainBody.actions._getFunc("loadImage")(selectedData.label+".png")
+            state.mainBody.actions._getFunc("loadImage")(selectedData.label+".png", target)
         }
         setTimeout(()=>state.mainPage.action.toggleMainMenu(),100);
     };

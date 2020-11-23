@@ -28,7 +28,7 @@ export class WsappClient {
     }
 
     private __initws() {
-        this.__ws = new WebSocket("ws://"+"localhost:3000"+"/wsrpc");
+        this.__ws = new WebSocket("ws://"+"192.168.100.9:3000"+"/wsrpc");
     }
 
     private __ws: WebSocket;

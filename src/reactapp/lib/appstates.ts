@@ -1,6 +1,5 @@
 import { AppStatesHandler, BaseAppState, map, StateMapping } from "../../utils/AppStatesHandler";
 import { ChooserActionSheetState } from "../components/ChooserActionSheet";
-import { StringListState } from "../components/List";
 import { MainPageState } from "../components/MainPage";
 import { MainPageState as MainBodyState } from "../components/AM-MainPage"
 import { docChooser } from "../controller/docChooser";

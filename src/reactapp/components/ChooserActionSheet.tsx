@@ -66,6 +66,7 @@ export class ChooserActionSheetState implements WithState {
                 stateMap.state)
         }
     }
+    target: any;
     state: BaseAppState;
     parameters: any;
     actions: ChooserActionSheetAction;
