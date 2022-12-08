@@ -55,7 +55,7 @@
     "@types/image-to-base64": "^2.1.0",
     "@types/react-onsenui": "^2.9.13",
     "@types/serve-favicon": "^2.5.1",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-ws": "^4.0.0",
     "file-loader": "^6.2.0",
     "image-to-base64": "^2.1.1",
